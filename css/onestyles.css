@@ -1,0 +1,122 @@
+
+body{
+  background-image:linear-gradient(#D9F8C4,#A2B5BB);
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.container
+{
+  width:100%;
+  height:785px;
+  display: grid;
+  justify-content: space-around;
+  grid-template-rows:repeat(4,1fr);
+  grid-template-columns:repeat(4,1fr);
+
+
+}
+.girdinput{
+
+}
+.heading1{
+  width:140px;
+  height:100px;
+  background-color: blue;
+  font-size: 50px;
+}
+.input1{
+  width:auto;
+  height: 50px;
+  background-color: yellow;
+  grid-column-start: 1;
+  grid-column-end:5;
+  grid-row-end:2;
+  border-radius:
+}
+.girdinput1
+{
+  background-image:repeating-linear-gradient(#6E85B7,#231955);
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  width:400px;
+  height:400px;
+  overflow:hidden;
+  align-items: center;
+  transition: width 2s,height 2s,transform 2s;
+  animation: rotation 2s  infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(1deg);
+    color: red;
+  }
+  to {
+    transform: rotate(360deg);
+    background-color: yellow;
+  }
+}
+.center{
+  text-align: center;
+  padding-top: 100px;
+  padding-left:100px;
+}
+.Age{
+  color:#FF8B8B;
+  font-family: georgia,serif;
+  padding-right:150px;
+  margin-top: 10px;
+  text-decoration: underline;
+  font-size: 30px;
+   font-family: 'Courier New', monospace;
+   font-weight: bolder;
+   transition: width 2s,height 2s;
+   transition-duration: 2s;
+}
+.Age:hover{
+  transition-duration:2s;
+  font-size: 45px;
+
+}
+.name{
+  padding-left: 3px;
+  border-spacing: 2px;
+  border:solid;
+  width:10px;
+  text-decoration: underline;
+  color:#E8AA42;
+  padding-right:150px;
+  margin-top:1px;
+  font-size: 50px;
+  font-family: 'Courier New', monospace;
+font-weight: bold;}
+.gridinput img{
+  width:100px;
+  height:auto;
+  transform: scale(0.5);
+}
+.combined{
+  grid-column: 3;
+  grid-row: 2/4;
+}
+
+.img{
+  background-color: yellow;
+  object-fit:cover;
+  transform: scale(1.2);
+
+  transition: width 2s,height 2s, transform 2s;
+}
+.img:hover{
+  transi
+  transition-duration: infinite;
+  transform:scale(2);
+}
+.image-1{
+  background-color: white;
+  margin-top: 10px;
+  transform: scale(1.25);
+  width: 115%;
+  height: 100%;
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+transition:height 2s,width 2s,transform 2s;
+}
